@@ -37,11 +37,14 @@ public class Lineplot extends JPanel {
     //String dummy = "10, 15, 23, 30, 38,52,60,78,83,92,100";
     //String[] dummy1 = dummy.split(",");
     //int[] Ydatapoints =  Arrays.stream(dummy1).mapToInt(Integer::parseInt).toArray();
-    String s = "10, 15, 23, 30, 38,52,60,78,83,92,100";
-    String[] split = s.split(",");
+   // String s = "10, 15, 23, 30, 38,52,60,78,83,92,100";
+   // String[] split = s.split(",");
+    int a,b, c, d, e,f,g,h,i,j,k;
     
     //public int[] Ydatapoints = Arrays.stream(split).mapToInt(Integer::parseInt).toArray();
-    public int[] Ydatapoints = {10, 15, 23, 30, 38,52,60,78,83,92,100}; 
+    public int[] Ydatapoints = {10, 15, 23, 30, 38,52,60,78,83,92,100};
+    
+    //public int[] Ydatapoints = {a, b, c, d, e,f,g,h,i,j,k}; 
     public int[] Xdatapoints = {3, 10, 15, 20, 28,30,35,40,47,53,60};
     String Ylabel ="hello";
     private int pointWidth = 5;
@@ -58,6 +61,8 @@ public class Lineplot extends JPanel {
 
     }
     public Lineplot() {
+        //int a=10;int b=15;int c=23;int d=30;int e=38;int f=52;int g=60;int h=78;int i=83;int j=92;int k=100;
+        
        // LinedataIn chart=new LinedataIn();
        // List<String> xvalues = chart.Xval;
       //  String[] myArray = new String[xvalues.size()];
@@ -258,7 +263,7 @@ public class Lineplot extends JPanel {
         MainPanel mainPanel = new MainPanel(scores);
         mainPanel.setPreferredSize(new Dimension(800, 600));
         JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(mainPanel);
         frame.pack();
         frame.setLocationRelativeTo(null);
